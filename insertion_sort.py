@@ -1,5 +1,6 @@
 def insertion_sort(lista):
     lista = lista.copy()
+    trocas = 0
 
     for i in range(1, len(lista)):
         atual = lista[i]
@@ -7,6 +8,7 @@ def insertion_sort(lista):
         while j >= 0 and lista[j] > atual:
             lista[j + 1] = lista[j]
             j -= 1
+            trocas += 1
         lista[j + 1] = atual
 
-    return lista
+    return lista, trocas

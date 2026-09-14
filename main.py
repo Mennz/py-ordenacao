@@ -7,3 +7,4 @@ if __name__ == "__main__":
     print(bubble_sort(numeros))
     print(selection_sort(numeros))
     print(insertion_sort(numeros))
+    # o retorno agora e uma tupla (lista, trocas)
